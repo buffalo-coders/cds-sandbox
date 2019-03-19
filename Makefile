@@ -75,10 +75,10 @@ run: install
 	@echo "RUNNING CDS SANDBOX TEST"
 	@echo ""
 	@echo "SHARE: OFF"
-	time java -Xshare:off -XX:+UnlockDiagnosticVMOptions -XX:SharedArchiveFile=target/cds-sandbox.jsa -jar target/cds-sandbox*.jar
+	time java -Xshare:off -jar target/cds-sandbox*.jar
 	@echo ""
 	@echo "SHARE: DUMP"
-	time java -Xshare:dump -XX:+UnlockDiagnosticVMOptions -XX:SharedArchiveFile=target/cds-sandbox.jsa -jar target/cds-sandbox*.jar
+	time java -Xshare:dump -XX:+UnlockDiagnosticVMOptions -XX:SharedArchiveFile=target/cds-sandbox.jsa
 	@echo ""
 	@echo "SHARE: ON"
 	time java -Xshare:on -XX:+UnlockDiagnosticVMOptions -XX:SharedArchiveFile=target/cds-sandbox.jsa -jar target/cds-sandbox*.jar

@@ -14,7 +14,7 @@ sh$ make run
 RUNNING CDS SANDBOX TEST
 
 SHARE: OFF
-time java -Xshare:off -XX:+UnlockDiagnosticVMOptions -XX:SharedArchiveFile=target/cds-sandbox.jsa -jar target/cds-sandbox*.jar
+time java -Xshare:off -jar target/cds-sandbox*.jar
 Hello World!
 
 real    0m0.111s
@@ -22,7 +22,7 @@ user    0m0.080s
 sys     0m0.029s
 
 SHARE: DUMP
-time java -Xshare:dump -XX:+UnlockDiagnosticVMOptions -XX:SharedArchiveFile=target/cds-sandbox.jsa -jar target/cds-sandbox*.jar
+time java -Xshare:dump -XX:+UnlockDiagnosticVMOptions -XX:SharedArchiveFile=target/cds-sandbox.jsa
 Allocated shared space: 37871616 bytes at 0x0000000800000000
 Loading classes to share ...
 Loading classes to share: done.

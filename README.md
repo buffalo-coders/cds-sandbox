@@ -7,10 +7,10 @@ Sandbox area where I am playing around with Java's Class Data Sharing (CDS).
 Build the project and run the CDS Sandbox test:
 
 ```sh
-make run
-```
+sh$ make run
 
-```sh
+[[ ..maven build output clipped.. ]]
+
 RUNNING CDS SANDBOX TEST
 
 SHARE: OFF
